@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="ElastoNet: Kinematic descriptors of deformation of ONH images for glaucoma progression detection.">
+    <meta name="keywords" content="elastography, optical flow, glaucoma, optic nerve head, strain">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ElastoNet: Kinematic descriptors of deformation of ONH images for glaucoma progression detection </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+
+
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/circular_logo.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title"> </h1>
+                        <h1 class="title is-1 publication-title">ElastoNet: Kinematic descriptors of deformation of ONH images for glaucoma progression detection</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://fisseha21.github.io/">Fisseha A. Ferede, </a>
+                            </span>
+                            <span class="author-block">
+                                <a href="https://www.computationalocularscience.com/members/">Madhusudhanan Balasubramanian</a>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">The University of Memphis</span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2304.14418"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2304.14418"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Video Link. -->
+                                <span class="link-block">
+                                    <a href="https://www.youtube.com"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/Computational-Ocularscience/ElastoNet"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                                <!-- Dataset Link. -->
+                                <span class="link-block">
+                                    <a href="https://www.computationalocularscience.com/software/"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="far fa-images"></i>
+                                        </span>
+                                        <span>Data</span>
+                                    </a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="datasets">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-centered">Datasets</h2>
+            <div class="content has-text-justified">
+                <p>
+                    In this section, we showcase two distinct datasets used for analyzing various deformation and strain patterns, helping in reconstructing dynamic scenes. Each dataset highlights unique characteristics and applications in motion estimation.
+                </p>
+            </div>
+
+            <!-- Dataset 1 -->
+            <section>
+                <h3 class="title is-4">I. Synthetic Speckle Pattern Dataset <a href="path/to/dataset.zip" download class="has-text-link">[click download]</a> </h3> 
+                <p>
+                    This dataset consists of randomly generated speckle patterns, capturing deformation and strain fields under controlled conditions. It is used for studying the reconstruction of dynamic scenes.
+                </p>
+                <div class="hero-body">
+                    <video id="teaser-synthetic" autoplay muted loop playsinline width="20%" height="auto">
+                        <source src="static/videos/Elasto_validation-synthetic.mp4" type="video/mp4">
+                    </video>
+                    <p class="has-text-centered">
+                        Our synthetic speckle pattern dataset, corresponding ground truth deformation, and strain fields along with our ElastoNet estimates.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Dataset 2 -->
+            <section>
+                <h3 class="title is-4">II. Deforming Rubber Dataset <a href="path/to/dataset.zip" download class="has-text-link">[click download]</a> </h3>
+                <p>
+                    This dataset captures uniaxial deformation of rubber, providing deformation field estimates for various strain patterns. It is particularly useful for studying real-world material deformations.
+                </p>
+                <div class="hero-body">
+                    <video id="teaser-rubber" autoplay muted loop playsinline width="50%" height="auto">
+                        <source src="static/videos/Elasto_validation_rubber.mp4" type="video/mp4">
+                    </video>
+                    <p class="has-text-centered">
+                        Uniaxial rubber deformation and our ElastoNet deformation field estimates.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            In this work, to the best of our knowledge, we developed the first optical flow estimation based
+                            elastography kinematic descriptors of the optic nerve head (ONH) of the retina from multiple
+                            confocal images. These kinematic descriptors include strain descriptors and vorticity descriptors
+                            which are capable of capturing local deformation patterns in shape associated with tissue expansion
+                            and contraction as well as local rotations and spins, respectively, that jointly define the underlying
+                            deformation during progressive glaucoma. Our approach utilizes our recent multi-frame based
+                            optical flow estimation algorithm, SSTMs, which are capable of estimating highly accurate flow
+                            fields from multiple image sequences by understanding the sequence’s space-time dependency.
+                            This flow estimates are used to approximate the deformation field based on which several elastography
+                            kinematic descriptors are developed. Our estimated elastography kinematic descriptors
+                            demonstrated exceptional performance in classifying ONH with progressive glaucoma from normal ONH on
+                            both the LEGS and DIGS datasets. Moreover, we introduce elastography based event analysis visualization
+                            tool that can capture tissue deformation related major events occurring in the ONH.
+                            This visualization tool has a big potential for diagnostic application in identifying localized
+                            tissue damages and relative rates of glaucoma progression from follow-up ONH scans. ONH 
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <div align="center" style="margin-top:20px;" style="margin-bottom:120px;">
+                <h2 class="title is-3"><span class="dnerf">ElastoNet</span> Architecture Overview</h2>
+                <img style='height: auto; width: 80%; object-fit: contain' src="static/images/Visual Results and Architecture.png" alt="overview_image">
+            </div>
+            <div align="center">
+                <b>ElastoNet Architecture:</b> uses learning based optical flow estimation to estimate deformation field and the four principal components of strain.
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <div align="center" style="margin-top:20px;" style="margin-bottom:120px;">
+                <h2 class="title is-3"><span class="dnerf">ElastoNet</span> Results on Retinal Dataset </h2>
+                <video id="teaser-synthetic" autoplay muted loop playsinline width="20%" height="auto">
+                    <source src="static/videos/Event_.mp4" type="video/mp4">
+                </video>
+                ElastoNet Architecture estimates for vonMises strain distribution in glaucomatous and normal eyes of patients.
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>
+    @article{ferede2023sstm,
+    author    = {Ferede, Fisseha Admasu and Balasubramanian, Madhusudhanan},
+    title     = {SSTM: Spatiotemporal recurrent transformers for multi-frame optical flow estimation},
+    journal   = {Neurocomputing},
+    year      = {2023},
+    }
+</code></pre>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div align="center" class="container">
+            <div class="columns is-centered">
+                <div class="content">
+                    This template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
