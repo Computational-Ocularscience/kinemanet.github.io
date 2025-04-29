@@ -14,4 +14,4 @@ If you find ElastoNet useful for your work please cite:
   publisher={Elsevier}
 }
 ```
-This website is borrowed from the [Nerfies website](https://nerfies.github.io)
+This website template is borrowed from the [Nerfies website](https://nerfies.github.io)
