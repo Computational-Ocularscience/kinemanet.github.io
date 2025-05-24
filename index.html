@@ -139,7 +139,7 @@
 
             <!-- Dataset 1 -->
             <section>
-                <h3 class="title is-4">I. Synthetic Speckle Pattern Dataset <a href="path/to/dataset.zip" download class="has-text-link">[click download]</a> </h3> 
+                <h3 class="title is-4">I. Synthetic Speckle Pattern Dataset <a href="https://livememphis-my.sharepoint.com/:f:/g/personal/mblsbrmn_memphis_edu/EpLL2Ca4XdZJvEDxFitbHqMBliEdCzgfdEbFtR-AiYqbDg?e=o8rSt7.zip" download class="has-text-link">[click download]</a> </h3> 
                 <p>
                     This dataset consists of randomly generated synthetic speckle patterns that are subjected to deformation using random deformation fields to generate deforming sequences with ground truth deformation field. In addition to the above datasets, we released a PyPI package, <a href="https://pypi.org/project/specklegen/">Specklegen</a>, which allows users to generate additional deforming speckle datasets with greater control over image size, sequence length, and motion range.
                 </p>
@@ -155,17 +155,43 @@
 
             <!-- Dataset 2 -->
             <section>
-                <h3 class="title is-4">II. Deforming Rubber Dataset <a href="path/to/dataset.zip" download class="has-text-link">[click download]</a> </h3>
-                <p>
-                    This dataset provides realistic deforming image sequences. The sequences were created by subjecting rubber samples of different geometries to a uniaxial stretch testing (Ustretch, Cellscale, Canada). During this process we laterally applied a specified strain amount from one end of the rubber while keeping the other end stationary.
-                </p>
-                <div class="hero-body">
-                    <video id="teaser-rubber" autoplay muted loop playsinline width="50%" height="auto">
-                        <source src="static/videos/Elasto_validation_rubber.mp4" type="video/mp4">
-                    </video>
-                    <p class="has-text-centered">
-                        Uniaxial rubber deformation and our ElastoNet deformation field estimates.
+                <h3 class="title is-4">
+                    II. Deforming Rubber Dataset
+                </h3>
+
+                <!-- Subsection: Uniaxial Rubber Testing -->
+                <div style="margin-top: 1.5rem;">
+                    <h4 class="title is-5">A. Uniaxial Rubber Testing <a href="path/to/dataset.zip" download class="has-text-link">[click download]</a> </h4>
+                    <p>
+                        This dataset provides realistic deforming image sequences. The sequences were created by subjecting rubber samples of different geometries to a uniaxial stretch testing (Ustretch, Cellscale, Canada). During this process we laterally applied a specified strain amount from one end of the rubber while keeping the other end stationary.
                     </p>
+                    <div class="hero-body">
+                        <video id="teaser-rubber" autoplay muted loop playsinline width="50%" height="auto">
+                            <source src="static/videos/Elasto_validation_rubber.mp4" type="video/mp4">
+                        </video>
+                        <p class="has-text-centered">
+                            Uniaxial rubber deformation and our ElastoNet deformation field estimates from image sequence inputs (magnitude in pixels/frame).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Subsection: Rubber Material Modeling -->
+                <div style="margin-top: 2rem;">
+                    <h4 class="title is-5">B. Rubber Material Modeling <a href="path/to/dataset.zip" download class="has-text-link">[click download]</a> </h4>
+   
+                    <p>
+                        To validate our ElastoNet deformation field estimates of deforming rubber samples in (A), we simulated their finite element model (FEM) using Abaqus. The material modeling simulates the uniaxial stretch testing of the above samples to generate their ground-truth equivalent deformation and strain fields.
+                    </p>
+
+                    <div class="hero-body">
+                        <video id="teaser-rubber" autoplay muted loop playsinline width="50%" height="auto">
+                            <source src="static/videos/Elasto_validation-rubber__simulation.mp4" type="video/mp4">
+                        </video>
+                        <p class="has-text-centered">
+                            Displecment field results (ground-truth equivalent) from the FEM modeling of rubber samples (magnitudes in mm).
+                        </p>
+                    </div>
+
                 </div>
             </section>
         </div>
