@@ -1,6 +1,6 @@
-# ElastoNet: Kinematic descriptors of deformation of ONH images for glaucoma progression detection
+# KinemaNet: Kinematic descriptors of deformation of ONH images for glaucoma progression detection
 
-This is the repository that contains source code for the [ElastoNet](https://computational-ocularscience.github.io/elastonet.github.io/).
+This is the repository that contains source code for the [KinemaNet](https://computational-ocularscience.github.io/kinemanet.github.io/).
 
 If you find ElastoNet useful for your work please cite:
 ```
